@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Using functions</title>
+    <title>Using while loops</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -14,7 +14,24 @@
 <body>
 
   <script type="text/javascript">
-    
+    var freeSpaceInContainer = 30;
+    var numberOfCars = 1;
+
+    // load container with cars until it is fully loaded (while loop)
+    while (numberOfCars <= freeSpaceInContainer) {
+      console.log("Added one more car to the container.");
+      numberOfCars++;
+    }
+    console.log("Container fully loaded.");
+
+    numberOfCars = 1;
+
+    // load container with cars until it is fully loaded (do-while loop)
+    do {
+      console.log("Added one more car to the container.");
+      numberOfCars++;
+    } while (numberOfCars <= freeSpaceInContainer);
+    console.log("Container fully loaded.");
   </script>
 </body>
 </html>
