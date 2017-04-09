@@ -12,14 +12,20 @@
 </head>
 
 <body>
-  <button id="buttonHide">Klick mich um den Text zu verbergen!</button>
+  <input id="addToFirstDivInput" placeholder="Text eingeben"></input>
+  <button id="appendInputButton">Klick mich um den eingegeben Text an den vorhandenen Text anzuhängen!</button>
   <div id="firstDiv">Hier steht ein toller Text!</div>
   <script type="text/javascript">
     // creating a new variable to save the div we want to change
     var divToChange = "firstDiv";
     // hide text of firstDiv on button click
-    document.getElementById('buttonHide').onclick = function onChangeButtonClick() {
-      document.getElementById(divToChange).style.display = "none";
+    document.getElementById('appendInputButton').onclick = function onAppendInputButtonClick() {
+      // creating a new variable to save the value of the input
+      var valueOfInput = document.getElementById('addToFirstDivInput').value;
+      // creating new variable to save the original Text of firstDiv
+      var originalText = document.getElementById(divToChange).innerHTML;
+      // append text of input to original text of firstDiv
+      document.getElementById(divToChange).innerHTML = originalText + " " + valueOfInput;
     }
   </script>
 </body>
