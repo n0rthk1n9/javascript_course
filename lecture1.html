@@ -14,9 +14,14 @@
 
 <body>
   <p id="name">My name is Jan</p>
+  <button id="button">Klick mich!</button>
   <script type="text/javascript">
     // change content of element with id "name"
     document.getElementById('name').innerHTML = "Now I'm Jonas";
+    // alert message on button click
+    document.getElementById('button').onclick = function onClickMeButtonClick() {
+      alert("Der Klick mich! Button wurde angeklickt")
+    }
   </script>
 </body>
 </html>
