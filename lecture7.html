@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Using Arrays</title>
+    <title>Using if-Statements</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -12,9 +12,18 @@
 </head>
 
 <body>
-
+  <input id="usersWeatherInput" placeholder="Bitte Wetter eingeben"></input>
+  <button id="submitWeather">Wetter abschicken!</button>
   <script type="text/javascript">
-    
+    // on click the value of usersWeatherInput is evaluated and an alert ist called
+    document.getElementById('submitWeather').onclick = function alertGivenWeather() {
+        if (document.getElementById('usersWeatherInput').value == "Regen") {
+            alert("Momentan regnet es.");
+        } else {
+            alert("Momentan regnet es nicht");
+        }
+    }
+
   </script>
 </body>
 </html>
