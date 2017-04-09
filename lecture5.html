@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Example Domain</title>
+    <title>Using Variables</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -15,9 +15,11 @@
   <button id="buttonHide">Klick mich um den Text zu verbergen!</button>
   <div id="firstDiv">Hier steht ein toller Text!</div>
   <script type="text/javascript">
+    // creating a new variable to save the div we want to change
+    var divToChange = "firstDiv";
     // hide text of firstDiv on button click
     document.getElementById('buttonHide').onclick = function onChangeButtonClick() {
-      document.getElementById('firstDiv').style.display = "none";
+      document.getElementById(divToChange).style.display = "none";
     }
   </script>
 </body>
