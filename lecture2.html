@@ -16,6 +16,8 @@
   <div id="firstDiv">Hier steht ein toller Text!</div>
   <button id="buttonAppend">Klick mich um an den Text etwas anzuhängen!</button>
   <div id="secondDiv">Häng doch etwas an mich dran!</div>
+  <button id="buttonCreate">Klick mich um Text hinzuzufügen!</button>
+  <div id="thirdDiv"></div>
   <script type="text/javascript">
     // change text of firstDiv on button click
     document.getElementById('buttonChange').onclick = function onChangeButtonClick() {
@@ -26,6 +28,10 @@
       var originalText = document.getElementById('secondDiv').innerHTML;
       var appendedText = " Jetzt hast du einen neuen Satz an den ursprünglichen Text angehängt.";
       document.getElementById('secondDiv').innerHTML = originalText + appendedText;
+    }
+    // create new text in thirdDiv on button click
+    document.getElementById('buttonCreate').onclick = function onCreateButtonClick() {
+      document.getElementById('thirdDiv').innerHTML = "Hier ist eine Liste leckerer Früchte: </br><ul><li>Erdbeere</li><li>Banane</li></ul>";
     }
   </script>
 </body>
