@@ -12,26 +12,12 @@
 </head>
 
 <body>
-  <button id="buttonChange">Klick mich um den Text zu ändern!</button>
+  <button id="buttonChange">Klick mich um den Text zu verbergen!</button>
   <div id="firstDiv">Hier steht ein toller Text!</div>
-  <button id="buttonAppend">Klick mich um an den Text etwas anzuhängen!</button>
-  <div id="secondDiv">Häng doch etwas an mich dran!</div>
-  <button id="buttonCreate">Klick mich um Text hinzuzufügen!</button>
-  <div id="thirdDiv"></div>
   <script type="text/javascript">
-    // change text of firstDiv on button click
+    // hide text of firstDiv on button click
     document.getElementById('buttonChange').onclick = function onChangeButtonClick() {
-      document.getElementById('firstDiv').innerHTML = "Jetzt steht hier noch ein viel tollerer Text!";
-    }
-    // append text to text of secondDiv on button click
-    document.getElementById('buttonAppend').onclick = function onAppendButtonClick() {
-      var originalText = document.getElementById('secondDiv').innerHTML;
-      var appendedText = " Jetzt hast du einen neuen Satz an den ursprünglichen Text angehängt.";
-      document.getElementById('secondDiv').innerHTML = originalText + appendedText;
-    }
-    // create new text in thirdDiv on button click
-    document.getElementById('buttonCreate').onclick = function onCreateButtonClick() {
-      document.getElementById('thirdDiv').innerHTML = "Hier ist eine Liste leckerer Früchte: </br><ul><li>Erdbeere</li><li>Banane</li></ul>";
+      document.getElementById('firstDiv').style.display = "none";
     }
   </script>
 </body>
