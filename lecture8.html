@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Using if-Statements</title>
+    <title>Using functions</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -12,9 +12,29 @@
 </head>
 
 <body>
-  
-  <script type="text/javascript">
 
+  <script type="text/javascript">
+    var x = 10;
+    var y = 20;
+    var summe;
+
+    //function for adding to variables together without parameters (definiton of function)
+    function add() {
+      summe = x + y;
+      console.log(summe);
+    }
+
+    // call of function without parameters
+    add();
+
+    //function for adding to variables together with parameters (definiton of function)
+    function addWithParameters(a, b) {
+      summe = a + b;
+      console.log(summe);
+    }
+
+    // call of function with parameters
+    addWithParameters(30, 50);
   </script>
 </body>
 </html>
