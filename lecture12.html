@@ -14,7 +14,36 @@
 <body>
 
   <script type="text/javascript">
-    
+    // three variables of different types
+    var number = 5;
+    var numberInString = "6";
+    var string = "r";
+    var floatingNumber = 200.6;
+
+    // original number is convertet in string and other string is concatinated
+    // to first string
+    console.log("Automatische Konvertierung nach String und Verkettung der Strings: " + number + numberInString);
+
+    // string is casted to number and added to other number
+    console.log("Explizite Konvertierung des Strings zu einer Zahl und addieren zur ersten Zahl: " + (number + Number(numberInString)));
+
+    // trying to convert a real string with no number content into a number
+    console.log(Number(string));
+
+    // test if content of variable is a number with tenary operator
+    console.log(isNaN(string) ? "Die Variable beinhaltet keine Zahl" : "Die Variable beinhaltet eine Zahl");
+
+    // round non even number
+    console.log("Gerundeter Wert der Zahl " + floatingNumber + ": " + Math.round(floatingNumber));
+
+    //find biggest number in set of given numbers
+    console.log("Größte Zahl aus den Zahlen " + numberInString + ", " + floatingNumber + ", " + number + ": " + Math.max(Number(numberInString), number, floatingNumber));
+
+    //find smallest number in set of given numbers
+    console.log("Kleinste Zahl aus den Zahlen " + numberInString + ", " + floatingNumber + ", " + number + ": " + Math.min(Number(numberInString), number, floatingNumber));
+
+    // find square root of given number
+    console.log("Die Quadratwurzel aus " + number + " is: " + Math.sqrt(number));
   </script>
 </body>
 </html>
