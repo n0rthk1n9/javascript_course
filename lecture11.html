@@ -25,6 +25,9 @@
     } else {
       console.log("Höchster Score mit if ermittelt: " + (highscore = scorePlayerTwo) + " (Spieler 2)");
     }
+
+    // using ternary operator to decide which player has highest score
+    console.log("Höchster Score mit ternärem Operator ermittelt: " + (highscore = (scorePlayerOne > scorePlayerTwo) ? scorePlayerOne + " (Spieler 1)" : scorePlayerTwo + " (Spieler 2)"));
   </script>
 </body>
 </html>
