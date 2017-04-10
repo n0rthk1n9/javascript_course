@@ -14,7 +14,17 @@
 <body>
 
   <script type="text/javascript">
+    // two scores of two players and a variable to store the highscore
+    var scorePlayerOne = 500;
+    var scorePlayerTwo = 600;
+    var highscore = 0;
 
+    // using normal if to decide which player has highest score
+    if (scorePlayerOne > scorePlayerTwo) {
+      console.log("Höchster Score mit if ermittelt: " + (highscore = scorePlayerOne) + " (Spieler 1)");
+    } else {
+      console.log("Höchster Score mit if ermittelt: " + (highscore = scorePlayerTwo) + " (Spieler 2)");
+    }
   </script>
 </body>
 </html>
