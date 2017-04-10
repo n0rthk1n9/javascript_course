@@ -24,6 +24,19 @@
     // creating an object for storing information about a player (short way)
     var secondPlayer = {name: "Maike", score: 9999, rank: 2}
     console.log(secondPlayer);
+
+    // creating a function for logging details of player to console
+    function playerDetails() {
+      console.log(this.name + ' hat ' + this.score + ' Punkte und ist auf Rang ' +
+                  this.rank);
+    }
+    // assign created function to attribut logDetails of object player
+    player.logDetails = playerDetails;
+    // assign created function to attribut logDetails of object secondPlayer
+    secondPlayer.logDetails = playerDetails;
+    // execute newly created object functions
+    player.logDetails();
+    secondPlayer.logDetails();
   </script>
 </body>
 </html>
