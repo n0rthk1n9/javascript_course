@@ -14,7 +14,20 @@
 <body>
 
   <script type="text/javascript">
+    // create a new date object and log it to console
+    var today = new Date();
+    console.log(today);
 
+    // create a specific date such as birthday
+    var birthday = new Date(1992, 9, 4)
+    console.log("Mein Geburtstag ist am " + birthday.getDate() + "." + birthday.getMonth() + "." + birthday.getFullYear());
+
+    // compare two dates the right way
+    var firstDate = new Date(2006, 3, 4);
+    var secondDate = new Date(2006, 3, 4);
+    console.log("Die beiden Datumsangaben " + firstDate.getDate() + "." + firstDate.getMonth() + "." + firstDate.getFullYear() +
+                " und " + secondDate.getDate() + "." + secondDate.getMonth() + "." + secondDate.getFullYear() +
+                ((firstDate.getTime() == secondDate.getTime()) ? " sind gleich." : " sind nicht gleich."));
   </script>
 </body>
 </html>
