@@ -14,7 +14,52 @@
 <body>
 
   <script type="text/javascript">
-    
+    // single quotes inside of a string
+    var escapedSingleQuotesString = 'So bringt man \'einfache Anführungszeichen\' in einem String unter.';
+    console.log(escapedSingleQuotesString);
+
+    // double qoutes inside a string
+    var escapedDoubleQuotesString = 'So bringt man \"doppelte Anführungszeichen\" in einem String unter.';
+    console.log(escapedDoubleQuotesString);
+
+    // output lenght of a string
+    var reallyLongString = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    console.log('Der String \"' + reallyLongString + '\" ist ' + reallyLongString.length + ' Zeichen lang.');
+
+    // convert string to uppercase
+    var upperCaseString = 'Dieser String wurde in Großbuchstaben konvertiert.';
+    console.log(upperCaseString.toUpperCase());
+
+    // find first occurance position of specific character in string
+    var findFirstOccuranceOfCharacterString = 'In diesem String ist mehr als ein \"s\" versteckt.'
+    console.log('Im String \"' + findFirstOccuranceOfCharacterString + '\" befindet sich das erste \"s\" an Position ' +
+                (findFirstOccuranceOfCharacterString.indexOf('s') + 1));
+
+    // determine if specific set of characters is in string
+    var searchForCharacterSetString = 'Ich bin ein ganz toller String';
+    console.log((searchForCharacterSetString.indexOf('x') == -1) ? 'Im String befindet sich kein x' : 'Im String befindet sich ein x');
+
+    // find last occurance position of specific character in string
+    var findLastOccuranceOfCharacterString = 'In diesem String ist mehr als ein \"s\" versteckt.'
+    console.log('Im String \"' + findLastOccuranceOfCharacterString + '\" befindet sich das letzte \"s\" an Position ' +
+                (findLastOccuranceOfCharacterString.lastIndexOf('s') + 1));
+
+    // slice a specific part of a string
+    var sliceString = 'Ich möchte auseinander geschnitten werden.';
+    console.log('Der Teil von Stelle 6 bis Stelle 11 aus dem String \"' + sliceString + '\" ist: \"' + sliceString.slice(6, 11) + '\"');
+
+    // make substring of a string with start and stop arguments
+    var substringString = 'Ich möchte als Substring wiedergegeben werden.';
+    console.log('Der Teil von Stelle 6 bis Stelle 11 aus dem String \"' + substringString + '\" ist: \"' + substringString.substring(6, 11) + '\"');
+
+    // make substring of string with start and lenght of substring arguments
+    var substrString = 'Ich möchte als Substring wiedergeben werden.';
+    console.log('Der Teil von Stelle 6 11 Stellen weiter aus dem String \"' + substrString + '\" ist: \"' + substrString.substr(6, 11) + '\"');
+
+    // check if two strings which have different cases are equal
+    var firstString = 'Hallo';
+    var secondString = 'hallo';
+    console.log((firstString.toUpperCase() == secondString.toUpperCase()) ? 'Der erste String ist gleich dem zweiten String' : 'Der erste String ist nicht gleich dem zweiten String');
   </script>
 </body>
 </html>
