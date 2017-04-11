@@ -14,7 +14,15 @@ $('li:last').addClass('blueBackground');
 $("p:contains('ganz')").addClass('yellowBackground');
 
 // hide content div after four seconds
-$('#content').hide(4000);
+//$('#content').hide(4000);
 
 // fadeOut menu div after four seconds
-$('#menu').fadeOut(4000);
+//$('#menu').fadeOut(4000);
+
+// get datepicker on date input field
+//$('#date').datepicker();
+
+// populate several sections of content on limited space
+$(function playTheAccordion() {
+  $('#whatToEat').accordion();
+});
