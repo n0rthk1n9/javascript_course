@@ -1,3 +1,11 @@
 .example {
   color: red;
 }
+
+.blueBackground {
+  background-color: blue;
+}
+
+.yellowBackground {
+  background-color: yellow;
+}
